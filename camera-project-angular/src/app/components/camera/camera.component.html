@@ -1,0 +1,29 @@
+<div class="searchbar">
+      <form>
+         <input (keyup)="whileSearching()" type="text" name="search" id="search" placeholder="Search a camera by entering the name" [(ngModel)]="name" /> 
+      </form>
+</div>
+   
+<table class="camera-table">
+      <tr class="table-header">
+            <td>ID</td>
+            <td>Name</td>
+            <td>Model</td>
+            <td>Resolution</td>
+            <td>IP</td>
+            <td>Delete Operation</td>
+        </tr>
+  
+      <tr *ngFor="let camera of cameras" class="camera-table-row">
+         <td>{{camera.id}}</td>
+         <td>{{camera.name}}</td>
+         <td>{{camera.model}}</td>
+         <td>{{camera.resolution}} MP</td>
+         <td>{{camera.ip}}</td>
+         <td><button class="deleteButton" (click)="deleteCamera(camera)" >Delete Camera</button></td>
+      </tr>
+</table>
+
+<div class="chart-container">
+   <canvas id='lineChart' width="900" height="380"></canvas>
+ </div>

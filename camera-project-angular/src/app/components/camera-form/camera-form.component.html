@@ -1,0 +1,33 @@
+<div class="container">
+<form #cameraForm="ngForm">
+
+    <label for="name" >Name:</label>
+    <input type="text" name="name" value="Name" [(ngModel)]="name" />
+    <br /><br />
+
+    <label for="model" >Model:</label>
+    <input type="text" name="model" value="Model" [(ngModel)]="model" />
+    <br /><br />
+
+    <label for="resolution" >Resolution:</label>
+    <input type="number" name="resolution" value="Resolution" [(ngModel)]="resolution" />
+    <br /><br />
+
+    <label for="id" >IP:</label>
+    <input type="text" name="ip" value="IP" [(ngModel)]="ip" />
+    <br /><br />
+    
+    <button (click)="addCamera(cameraForm)" > Add Camera</button>
+    
+</form>
+</div>
+<br/><br/>
+<div class="succesResult" *ngIf="cameraAdded">
+
+    <p>Camera added suscessfully.</p>
+</div>
+
+<div class="errorResult" *ngIf="cameraError">
+
+    <p>There was an error!</p>
+</div>

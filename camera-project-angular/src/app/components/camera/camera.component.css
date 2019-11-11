@@ -1,0 +1,56 @@
+.camera-table{
+    width:100%;
+    border-spacing: 0 5px;
+}
+
+.camera-table-row{
+    width:100%;
+    height:60px;
+    color:white;
+    background-color:#fc7233;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.camera-table-row:hover{
+    background-color: #615555;
+}
+
+td button{
+    color:white;
+    background-color:#f44336;
+    height:50px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width:200px;
+    border:none;
+}
+
+.camera-table-row td{
+    text-align:center;
+}
+
+.searchbar{
+    width:100%;
+}
+
+.searchbar input{
+    width:99.5%;
+    height:40px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    vertical-align: middle;
+    font-size:22px;
+    display: inline-block;
+}
+
+table{
+    width:100%;
+    border-spacing: 0 5px;
+}
+
+.table-header{
+    background-color:#555;   
+    width:100%;
+    height:60px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color:white;
+    text-align:center;
+}
